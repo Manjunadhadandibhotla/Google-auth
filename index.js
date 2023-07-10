@@ -3,7 +3,7 @@ function onSignIn(googleUser) {
   $("#name").text(profile.getName());
   $("#email").text(profile.getEmail());
   $("#image").attr('src',profile.getImageUrl());
-  $("#data").css("display","block");
+  $(".data").css("display","block");
   $(".g-signin2").css("display","none");
 }
 
@@ -13,6 +13,7 @@ function signOut() {
     //console.log("User signed out.");
     alert("You Are Signed Out Successfully");
     $(".g-signin2").css("display","block");
-    $("#data").css("display", "none");
+    $(".data").css("display", "none");
   });
 }
+ 
